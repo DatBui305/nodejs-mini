@@ -1,0 +1,20 @@
+PUT  http://localhost:5000/api/product/ratings
+Authorization: yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmUyNDg0OGNhNDcxMGRlYzcxOTRlY2QiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjYyNzQ0NTUsImV4cCI6MTcyNjQ0NzI1NX0.MTYw1Lp_z6msaDrTEyBlVgJ6iG3MUuCw7S3NSEcz-3k
+Content-Type: application/json
+
+{
+    "star": 5,
+    "comment": "cai nay tot lam do nha",
+    "pid": "66e3e07a629f7759064d8ab7"
+
+
+}
+
+### 
+POST  http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "buianhdat305@gmail.com",
+    "password": "1234567"
+}

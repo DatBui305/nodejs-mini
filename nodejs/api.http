@@ -1,0 +1,35 @@
+GET http://localhost:5000/cddccd
+
+###
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "buianhdat4@gmail.com",
+    "password": "123456"
+}
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "buianhdat4@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/api/v1/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJidWlhbmhkYXQ0QGdtYWlsLmNvbSIsInJvbGVfY29kZSI6IlIzIiwiaWF0IjoxNzI1ODc1NjY1LCJleHAiOjE3MjU4NzU2NzB9.SODi_0p4qytz91Ye5JEvS6ciJSim6njNtAQnk37X1nM
+###
+GET  http://localhost:5000/api/v1/insert/
+
+###
+GET  http://localhost:5000/api/v1/book/
+
+###
+POST  http://localhost:5000/api/v1/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzI1ODgxMzg5LCJleHAiOjE3MjcxNzczODl9.9NGv6gqW_lAxjrakIpSXbZj9b7hLijvhdz4QNP5lL_M"
+}
